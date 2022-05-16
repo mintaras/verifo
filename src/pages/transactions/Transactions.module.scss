@@ -1,0 +1,65 @@
+@import '../../variables.module';
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.page-title {
+  margin: 20px 0;
+}
+
+.table-wrapper {
+  background-color: #fff;
+  margin: 0 -15px 20px;
+  min-height: 332px;
+
+  &.not-found {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.95rem;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.pagination :global .page-item:first-child .page-link {
+  border-bottom-left-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}
+
+.pagination :global .page-item:last-child .page-link {
+  border-bottom-right-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.pagination :global .page-link:focus {
+  box-shadow: none;
+}
+
+.th-payment-details {
+  min-width: 168px;
+}
+
+@media (min-width: 576px) {
+  .table-wrapper {
+    border-radius: $border-radius;
+    margin: 0 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    margin: 40px 0;
+  }
+}
